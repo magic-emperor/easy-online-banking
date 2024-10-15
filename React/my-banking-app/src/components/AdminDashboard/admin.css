@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
+
+.admin-dashboard {
+  font-family: "IBM Plex Sans", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.admin-dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.admin-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+.admin-dashboard-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.admin-dashboard-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.admin-user-info {
+  display: flex;
+  align-items: center;
+}
+
+.admin-username {
+  margin-right: 10px;
+}
+
+.admin-user-avatar {
+  font-size: 24px;
+}
+
+.admin-dashboard-content {
+  display: flex;
+}
+
+.admin-dashboard-nav {
+  width: 200px;
+  background-color: #2c3e50;
+  padding: 20px;
+}
+
+.admin-dashboard-nav button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-dashboard-nav button:hover {
+  background-color: #34495e;
+}
+
+.admin-dashboard-main {
+  flex: 1;
+  padding: 20px;
+}
+
+.admin-user-search {
+  margin-bottom: 30px;
+}
+
+.admin-search-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.admin-search-input input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.admin-search-input button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-search-input button:hover {
+  background-color: #2980b9;
+}
+
+.admin-user-details {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.user-info p {
+  margin-bottom: 10px;
+}
+
+.admin-actions {
+  margin-top: 20px;
+}
+
+.delete-user-btn {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-user-btn:hover {
+  background-color: #c0392b;
+}
+
+.loan-details {
+  margin-top: 20px;
+}
+
+.loan-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.loan-actions button {
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.loan-actions button:hover {
+  background-color: #27ae60;
+}
+
+.loan-actions button.rejected {
+  background-color: #e74c3c;
+}
+
+.loan-actions button.rejected:hover {
+  background-color: #c0392b;
+}
+
+.loan-actions button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.transaction-history {
+  margin-top: 20px;
+}
+
+.transaction-history table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-history th,
+.transaction-history td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction-history th {
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+.transaction-history tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-top: 10px;
+}
+.reject {
+  background-color: #c0392b;
+}
+.admin-dashboard-main {
+  scrollbar-width: 100%;
+  overflow-y: auto;
+  height: 80vh;
+  background-color: white;
+}
+.admin-user-search {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1;
+  background-color: white;
+}
+@media (max-width: 768px) {
+  .admin-dashboard-content {
+    flex-direction: column;
+  }
+
+  .admin-dashboard-nav {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .admin-search-input {
+    flex-direction: column;
+  }
+}
